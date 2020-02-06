@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- the head tag is just where all the stuff like style,base,
+    link and script goes, it is required in html4, however, you don't have to had a head tag in html5. -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Press+Start+2P">
+    <!-- so here is a link to the stylesheet I got from google font, which allows me to use this certain typeface. -->
+    <title>Prismo's Site</title>
+    <!-- this is the title of my website which is the name that appears on your browser's navigation bar.  -->
+    <style>
+    /* style tag is where all the css style goes, it determines how your website will look like on a browser.  */
+    /* you can have multiple style tags in your code.   */
+    body {
+      background-color: #28558C;
+      /* here is how i set the background-color to dark blue, you can use the name of your color or just type in the */
+      /* 6 digital hex code for the color you want to choose.  */
+      color: cyan;
+      text-align: center;
+      /* to put my text at the center of the page, i think it will work no matter how big your browser is, */
+      /* so it's a good way to keep you content organized and make your text responsive to different browser size. */
+      font-size: 40px;
+    }
+    .patrick:hover img {
+      /* here is some transformation if i hover my mouse above patrick. i specified a class for him so, */
+      /* this transformation only works on the baby patrick star.  */
+    transform: scale(1.5) rotateZ(-10deg);
+     /* this line of code makes the patrick 1.5 times bigger and rotate on the Z axis for -10 degree. */
+    }
+    .cherry:hover img {
+      /* same thing here for the cherries, i made a class for them so these adjustment only work for the cherries when i hover over them. */
+    opacity: 0.2;
+    /* i made the opacity change to 0.2 times of it's original opacity. */
+    }
+    .cherry img {
+    opacity: 0.6;
+    /* in order for it to not block my text, i change the origial opacity to 0.6. so that people can see the words clearly */
+    }
+
+    .moon:hover img{
+    /* i have a class for my moon so these changes only happened to my moon when i hover above it. */
+      transform: rotatex(-25deg);
+    /* this makes the moon to rotate on the X axis for -25 degree when you hover above it. */
+    }
+    .moon img{
+      transform: rotatez(-25deg);
+      /* this makes my moon rotate on the z axis for -25 degree when i first open the page. */
+    }
+    a {
+      color: yellow;
+      /* this change the color of all of my links to yellow so they look cool. */
+      text-shadow: 5px 7px violet;
+      /* this make sure i have very cool text shadow under my text. the first two elements are the position of the shadow, */
+      /* and the last one is the color of the shadow. it's violet cause i go to nyu. but it looks pink to me which is not cool*/
+      font-size:3em;
+      /* the size of my link is 3em, I really wanted to emphize that so it is huge.  */
+    }
+    p {
+      font-family: 'Press Start 2P', cursive;
+      /* ok here is the type face I found on google font that i had to linked to a stylesheet so it chould work properly. */
+      /* it's a retro 80s vintage arcade game vibe type of font so it's really cool. */
+      color: yellow;
+      /* so here i made all my text in my paragraph yellow to match the color of the link at the end of the sentence. */
+      font-weight:800;
+      /* to make it even thicker so it looks really really retro 80s vintage arcade game style. but it don't seems to be working, did it worked?*/
+      font-size:30px;
+      /* here i set the font size to 30 which is a little smaller than my link. */
+
+    }
+    a:hover{
+      color:magenta;
+      /* when you hover over my links they turn into magenta which looks like real violet to me. */
+    }
+    li {
+    /* yes here is the style for my really beautiful navigation bar. it's a list.  */
+    font-family: 'Press Start 2P', cursive;
+    /* the same type face you know, keep everything the same type face bro. */
+    font-size:8px;
+    /* the size of my text in my list. it's small but i think they looks cool.  */
+
+    }
+    li a:hover {
+    background-color: #111;
+    /* when you hover over the links on my navigation bars(the list), they actually turn darker which is pretty cool. */
+    }
+    ul {
+    /* ok here is a unordered list, i think it helps me to get rid of some useless margin and padding stuff there on my bar. pretty useful. */
+    list-style-type: none;
+    /* like i said, this kinda omit some style issue there. */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    }
+    li a {
+    display: block;
+    /* to make my list displayed in blocks, and make it retro vintage arcade game style. */
+    color: white;
+    /* ok i made my links in my list white so it's like hierarchy you know, less important but still looks good. */
+    text-align: center;
+    /* again i made my text in the center so it's like responsive to different web page size. */
+    padding: 14px 15px;
+    text-decoration: none;
+    /* again remove any unnencessary decoration so it look simple and clean. */
+    }
+    marquee{
+      background-color: #333;
+      /* i made the maarquee the same color to match the navigation bar that i have.  */
+    }
+
+  /* CSS STOPS here */
+    </style>
+    <!-- finally all my css stuff end here, below is just some useless html garbage. -->
+  </head>
+<!-- HTML goes here! -->
+  <body>
+    <ul>
+    <li><a href="https://emily311.github.io/web-nyu-idm/here-come-the-planes">love</a></li>
+    <!-- ok here is some trap links to emlily's webpage cause i don't want to leave the link blank. -->
+    <li><a href="https://emily311.github.io/web-nyu-idm/here-come-the-planes">justice</a></li>
+    <!-- ok here is some trap links to emlily's webpage cause i don't want to leave the link blank. yes -->
+    <li><a href="https://emily311.github.io/web-nyu-idm/here-come-the-planes">love</a></li>
+    <!-- ok here is some trap links to emlily's webpage cause i don't want to leave the link blank. ok -->
+    </ul>
+    <p>Cause when love is gone,</p>
+    <!-- finally, we have the major stuff which are the lyrics. -->
+    <p>There's always justice</p>
+    <!-- very nice, another line of the lyrics. -->
+    <p>And when justice is <a href="https://emily311.github.io/web-nyu-idm/here-come-the-planes">gone</a></p>
+    <!-- cool, another line of the lyrics, which has a link to next site at the end.  -->
+      <table cellspacing="0">
+      <!-- i just got rid of the spacing between my pictures here. -->
+      <tr>
+      <td><img src="05dc1498ad5dce13d32b957a4aef8d31.gif" width=250 height= 350></td>
+      <!-- here is a very cool image i found on pinterest. -->
+      <td><img src="05dc1498ad5dce13d32b957a4aef8d31.gif" width=250 height= 350></td>
+      <!-- here is a very cool image i found on pinterest. -->
+      <td><img src="05dc1498ad5dce13d32b957a4aef8d31.gif" width=250 height= 350></td>
+      <!-- here is a very cool image i found on pinterest. -->
+      <td><img src="05dc1498ad5dce13d32b957a4aef8d31.gif" width=250 height= 350></td>
+      <!-- here is a very cool image i found on pinterest. -->
+      <td><img src="05dc1498ad5dce13d32b957a4aef8d31.gif" width=250 height= 350></td>
+      <!-- here is a very cool image i found on pinterest. -->
+      <td><img src="05dc1498ad5dce13d32b957a4aef8d31.gif" width=250 height= 350></td>
+      <!-- here is a very cool image i found on pinterest. -->
+      <!-- and i put them in a table. -->
+      </tr></table>
+
+    <div class="cherry">
+    <!-- a class i made for the cherries, they are cute cherries. -->
+    <img style ="position: absolute; TOP:100px; LEFT:110px; WIDTH:152; HEIGHT:100" SRC="pngkey.com-cherry-png-95890.png">
+    <!-- to put the image to a specfic position using width and hright value. -->
+    </div>
+    <div class="patrick">
+      <!-- to put the image to a specfic position using width and hright value. -->
+    <img style ="position: absolute; TOP:500px; LEFT:1000px; WIDTH:200px; HEIGHT:202px" SRC="jing.fm-spongebob-clipart-282351.png">
+    </div>
+    <div class="moon">
+      <!-- to put the image to a specfic position using width and hright value. -->
+    <img style ="position: absolute; TOP:10px; LEFT:1240px; WIDTH:180px; HEIGHT:182px" SRC="PngItem_53597.png"></div>
+    <marquee>
+      <!-- i really love this marquee. thank you. -->
+    <p> ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah ah</p>
+    </marquee>
+  </body>
+
+</html>
+<!-- HTML STOPS here! -->
