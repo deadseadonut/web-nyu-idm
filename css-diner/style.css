@@ -23,8 +23,30 @@ body {
   color: yellow;
   text-align: center;
   font-size: 2em;
+  font-family: 'Press Start 2P', cursive;
 }
+#cool{
+  color:red;
+}
+/* level 3: select elements with an ID. this allows me to select all the elements with a cool id. */
+.ateam{
+  color:white;
+}
+/* level 6: Select elements by their class. this allows me to select all the elements in the class a team. */
+p+ .ateam{
+  color:blue;
+}
+/* level 12: Select an element that directly follows another element. this allows me to selects every element with class="a team"
+but only when it directly follows a p. */
+div p:only-child{
+  color:green;
+}
+/* level 16: Select an element that are the only element inside of another one. this allows me to selects the only p element that are in div. */
+h1:last-of-type{
 
+  color: purple;
+}
+/* level 24:Select the last element of a specific type. this allows me to select the last h1 tag. */
 .my-fun-class {
   width: 40%;
   border: 2px solid forestgreen;
